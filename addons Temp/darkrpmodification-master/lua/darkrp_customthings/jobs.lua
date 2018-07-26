@@ -59,6 +59,7 @@ TEAM_KILLER = DarkRP.createJob("Killer",{
     model = "models/player/lordvipes/rerc_hunk/hunk_cvp.mdl"
     description = [[Do whatever it takes to make sure your target meets his demise!]],
     weapons = {"AK47"},
+    command = "killer",
     max = 1,
     salary = 300,
     admin = 0,
@@ -82,4 +83,4 @@ GAMEMODE.CivilProtection = {
 --[[---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------]]
-DarkRP.addHitmanTeam(TEAM_MOB)
+DarkRP.addHitmanTeam(TEAM_MOB, TEAM_KILLER)
