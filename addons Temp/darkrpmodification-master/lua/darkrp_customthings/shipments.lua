@@ -26,7 +26,11 @@ DarkRP.createShipment("Coke", {
     pricesep = 200,
     noship = false,
     category = "Drugs",
-    allowed = {TEAM_DRUG}
+    allowed = {TEAM_DRUG},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_DRUG}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Heroine", {
@@ -38,7 +42,11 @@ DarkRP.createShipment("Heroine", {
     pricesep = 400,
     noship = false,
     category = "Drugs",
-    allowed = {TEAM_DRUG}
+    allowed = {TEAM_DRUG},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_DRUG}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("LSD", {
@@ -50,7 +58,11 @@ DarkRP.createShipment("LSD", {
     pricesep = 150,
     noship = false,
     category = "Drugs",
-    allowed = {TEAM_DRUG}
+    allowed = {TEAM_DRUG},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_DRUG}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Weed", {
@@ -62,7 +74,11 @@ DarkRP.createShipment("Weed", {
     pricesep = 50,
     noship = false,
     category = "Drugs",
-    allowed = {TEAM_DRUG}
+    allowed = {TEAM_DRUG},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_DRUG}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Mushrooms", {
@@ -74,7 +90,11 @@ DarkRP.createShipment("Mushrooms", {
     pricesep = 100,
     noship = false,
     category = "Drugs",
-    allowed = {TEAM_DRUG}
+    allowed = {TEAM_DRUG},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_DRUG}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("PCP", {
@@ -86,7 +106,11 @@ DarkRP.createShipment("PCP", {
     pricesep = 100,
     noship = false,
     category = "Drugs",
-    allowed = {TEAM_DRUG}
+    allowed = {TEAM_DRUG},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_DRUG}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("M-3", {
@@ -98,7 +122,11 @@ DarkRP.createShipment("M-3", {
     pricesep = 1500,
     noship = false,
     category = "Shotguns",
-    allowed = {TEAM_GUN}
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Contender", {
@@ -110,7 +138,11 @@ DarkRP.createShipment("Contender", {
     pricesep = 2600,
     noship = false,
     category = "Rifle",
-    allowed = {TEAM_GUN}
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("M24", {
@@ -122,7 +154,11 @@ DarkRP.createShipment("M24", {
     pricesep = 4000,
     noship = false,
     category = "Rifle",
-    allowed = {TEAM_GUN}
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Honeybadger", {
@@ -133,8 +169,12 @@ DarkRP.createShipment("Honeybadger", {
     separate = true,
     pricesep = 2500,
     noship = false,
-    category = "Sub Machine guns"
-    allowed = {TEAM_GUN}
+    category = "Sub Machine guns",
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Thompson", {
@@ -146,7 +186,11 @@ DarkRP.createShipment("Thompson", {
     pricesep = 2500,
     noship = false,
     category = "Sub Machine guns",
-    allowed = {TEAM_GUN}
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Colt 1911", {
@@ -158,7 +202,11 @@ DarkRP.createShipment("Colt 1911", {
     pricesep = 500,
     noship = false,
     category = "Handgun",
-    allowed = {TEAM_GANG}
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Glock", {
@@ -170,7 +218,11 @@ DarkRP.createShipment("Glock", {
     pricesep = 1500,
     noship = true,
     category = "Handgun",
-    allowed = {TEAM_GANG}
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Beretta", {
@@ -182,7 +234,11 @@ DarkRP.createShipment("Beretta", {
     pricesep = 1500,
     noship = true,
     category = "Handgun",
-    allowed = {TEAM_GANG}
+    allowed = {TEAM_GUN},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_GUN}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Ephedrine", {
@@ -194,7 +250,11 @@ DarkRP.createShipment("Ephedrine", {
     pricesep = 50,
     noship = true,
     category = "Meth",
-    allowed = {TEAM_METH}
+    allowed = {TEAM_METH},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_METH}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Hydrochloric Acid", {
@@ -206,7 +266,11 @@ DarkRP.createShipment("Hydrochloric Acid", {
     pricesep = 200,
     noship = true,
     category = "Meth",
-    allowed = {TEAM_METH}
+    allowed = {TEAM_METH},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_METH}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Iodine", {
@@ -218,7 +282,11 @@ DarkRP.createShipment("Iodine", {
     pricesep = 150,
     noship = true,
     category = "Meth",
-    allowed = {TEAM_METH}
+    allowed = {TEAM_METH},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_METH}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Pot", {
@@ -230,7 +298,11 @@ DarkRP.createShipment("Pot", {
     pricesep = 10,
     noship = true,
     category = "Meth",
-    allowed = {TEAM_METH}
+    allowed = {TEAM_METH},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_METH}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Sodium Hydroxide", {
@@ -242,7 +314,11 @@ DarkRP.createShipment("Sodium Hydroxide", {
     pricesep = 500,
     noship = true,
     category = "Meth",
-    allowed = {TEAM_METH}
+    allowed = {TEAM_METH},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_METH}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Stove", {
@@ -254,7 +330,11 @@ DarkRP.createShipment("Stove", {
     pricesep = 1000,
     noship = true,
     category = "Meth",
-    allowed = {TEAM_METH}
+    allowed = {TEAM_METH},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_METH}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("Water", {
@@ -266,7 +346,11 @@ DarkRP.createShipment("Water", {
     pricesep = 10,
     noship = true,
     category = "Meth",
-    allowed = {TEAM_METH}
+    allowed = {TEAM_METH},
+    customCheck = function(ply) return
+        table.HasValue({TEAM_METH}, ply:Team())
+    end,
+    CustomCheckFailMsg = "",
 })
 
 DarkRP.createShipment("TV", {
