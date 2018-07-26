@@ -56,7 +56,7 @@ TEAM_DRUG = DarkRP.createJob("Drug Pusher",{
 
 TEAM_KILLER = DarkRP.createJob("Killer",{
     color = Color(81, 0, 8, 0),
-    model = "models/player/lordvipes/rerc_hunk/hunk_cvp.mdl"
+    model = "models/player/lordvipes/rerc_hunk/hunk_cvp.mdl",
     description = [[Do whatever it takes to make sure your target meets his demise!]],
     weapons = {"AK47"},
     command = "killer",
