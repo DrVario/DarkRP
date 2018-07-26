@@ -98,6 +98,7 @@ TEAM_BOXER = DarkRP.createJob("Boxer",{
     model = "models/fzone96/johncena/johncena.mdl",
     description = [[Host boxing matches against your fellow boxer, or anyone who thinks they can challenge you!|make sure they tip|]],
     weapons = {"m9k_fists"},
+    command = "boxer".
     max = 4,
     salary = 30,
     admin = 0,
@@ -106,12 +107,13 @@ TEAM_BOXER = DarkRP.createJob("Boxer",{
 })
 
 TEAM_SOUND = DarkRP.createJob("Soundcloud Rapper",{
-    color = (0, 0, 0, 0),
+    color = Color(0, 0, 0, 0),
     model = "models/player/ryder/ryder.mdl",
     description = [[Entertain the masses, but don't get shot. Your job is to lay down the sickest beats when requested!]],
     weapons = {"weapon_vape_hallucinogenic", "m9k_glock"},
+    command = "rapper",
     max = 1,
-    salary, = 100,
+    salary = 100,
     admin = 0,
     vote = false,
     hasLicense = false,
