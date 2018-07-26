@@ -17,8 +17,8 @@ Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
 TEAM_Lawyer = DarkRP.createJob("Lawyer",{
     color = Color(203, 207, 214, 0),
-    model = "models/player/citizen.mdl",
-    description = [[Uphold the law in of the land! Your main job is to insure everyone gets the justice they deserve.]]
+    model = "models/snoopdogg.mdl",
+    description = [[Uphold the law in of the land! Your main job is to insure everyone gets the justice they deserve.]],
     weapons = {},
     command = "lawyer",
     max = 2,
@@ -30,8 +30,8 @@ TEAM_Lawyer = DarkRP.createJob("Lawyer",{
 
 TEAM_JUDGE = DarkRP.createJob("Judge",{
     color = Color(150, 186, 161, 0),
-    model = "models/player/citizen.mdl",
-    description = [[Bring down the hammer of justice onto those who desever the punishment!]]
+    model = "models/lenoax/cavejohnson_pm.mdl",
+    description = [[Bring down the hammer of justice onto those who desever the punishment!]],
     weapons = {},
     command = "judge",
     max = 1,
@@ -43,8 +43,8 @@ TEAM_JUDGE = DarkRP.createJob("Judge",{
 
 TEAM_DRUG = DarkRP.createJob("Drug Pusher",{
     color = Color(191, 211, 6, 0),
-    model = "models/player/Eli.mdl",
-    description = [[Sell what ya got, and don't get caught!]]
+    model = "models/half-dead/gopniks/slav.mdl",
+    description = [[Sell what ya got, and don't get caught!]],
     weapons = {},
     command = "drug",
     max = 4,
@@ -54,11 +54,17 @@ TEAM_DRUG = DarkRP.createJob("Drug Pusher",{
     hasLicense = false,
 })
 
-TEAM_ADDICT = DarkRP.createJob("Addict",{
-    color = Color
-    
+TEAM_KILLER = DarkRP.createJob("Killer",{
+    color = Color(81, 0, 8, 0),
+    model = "models/player/lordvipes/rerc_hunk/hunk_cvp.mdl"
+    description = [[Do whatever it takes to make sure your target meets his demise!]],
+    weapons = {"AK47"},
+    max = 1,
+    salary = 300,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
 })
-
 
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
